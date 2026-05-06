@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors — Cursor warm-ivory studio palette */
+  --color-canvas-parchment: #f7f7f4;
+  --color-inkwell: #262510;
+  --color-muted-stone: #7a7974;
+  --color-deep-shadow: #141414;
+  --color-pebble-gray: #e6e5e0;
+  --color-onyx-outline: #f54e00;
+  --color-chartreuse-alert: #4ade80;
+  --color-goldenrod-accent: #c08532;
+  --color-forest-green-action: #34785c;
+  --color-highlight-beige: #cdcdc9;
+
+  /* Typography — substitutes specified by DESIGN.md */
+  --font-cursorgothic: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-berkeleymono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-lato: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif-display: 'Instrument Serif', 'EB Garamond', ui-serif, Georgia, serif;
+
+  /* Type scale */
+  --text-caption: 10px;
+  --text-body-lg: 14px;
+  --text-heading-sm: 22px;
+  --text-heading: 26px;
+  --text-heading-lg: 36px;
+  --text-display: 72px;
+
+  /* Spacing */
+  --spacing-43: 43px;
+  --spacing-67: 67px;
+
+  /* Radii */
+  --radius-cards: 4px;
+  --radius-buttons: 4px;
+  --radius-prominent: 8px;
+
+  /* Shadows */
+  --shadow-xl: rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 1px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px, rgba(0, 0, 0, 0.15) 0px 12px 24px -8px, oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 0.5px;
+  --shadow-subtle: oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.28) 0px 18px 36px -18px;
+}
+
+@layer base {
+  html {
+    font-feature-settings: "ss01", "cv11", "tnum";
+  }
+  body {
+    margin: 0;
+    background-color: var(--color-canvas-parchment);
+    color: var(--color-inkwell);
+    font-family: var(--font-cursorgothic);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-onyx-outline);
+    color: var(--color-canvas-parchment);
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: var(--font-berkeleymono);
+  }
+  .font-serif-display {
+    font-family: var(--font-serif-display);
+  }
+  .tracking-display { letter-spacing: -2.16px; }
+  .tracking-heading-lg { letter-spacing: -0.45px; }
+  .tracking-heading { letter-spacing: -0.35px; }
+  .tracking-heading-sm { letter-spacing: -0.08px; }
+  .tracking-caption {
+    letter-spacing: 0.06px;
+    text-transform: uppercase;
+  }
+
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: radial-gradient(rgba(38, 37, 16, 0.05) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode: multiply;
+    opacity: 0.55;
+  }
+  .grain > * { position: relative; z-index: 1; }
+}
