@@ -1,5 +1,3 @@
-import { SectionLabel } from './ui'
-
 const PIPELINE = [
   {
     tag: '01',
@@ -59,23 +57,25 @@ export function QuantCodeBench() {
   return (
     <section id="quantcode-bench" className="border-b border-inkwell/10 bg-pebble-gray/40">
       <div className="mx-auto max-w-[1300px] px-6 lg:px-10 py-24 lg:py-28">
-        {/* Header */}
+        {/* Header — uniform type, single accent */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-          <div className="flex flex-col gap-6 max-w-[60ch]">
-            <SectionLabel index="§ 02">Featured research</SectionLabel>
-            <h2 className="text-[34px] lg:text-[44px] leading-[1.05] tracking-heading-lg text-deep-shadow">
-              <span className="font-mono text-[20px] lg:text-[24px] tracking-tight text-onyx-outline align-[3px]">
-                QuantCode-Bench /
-              </span>{' '}
-              the first benchmark for{' '}
-              <em className="font-serif-display not-italic italic">executable</em>{' '}
+          <div className="flex flex-col gap-5 max-w-[60ch]">
+            <span className="font-mono text-[11px] tracking-caption text-muted-stone">
+              <span className="text-onyx-outline">§ 02</span> · Featured research
+              · QuantCode-Bench
+            </span>
+            <h2 className="text-[32px] lg:text-[40px] leading-[1.1] tracking-heading-lg text-deep-shadow">
+              The first benchmark for{' '}
+              <em className="font-serif-display italic text-onyx-outline">
+                executable
+              </em>{' '}
               trading strategies.
             </h2>
-            <p className="text-[16px] leading-[1.55] text-inkwell/80">
+            <p className="text-[15px] leading-[1.6] text-inkwell/80">
               400 tasks. 17 frontier models. A four-stage pipeline that grades
-              not what an LLM <em className="font-serif-display not-italic">claims</em>{' '}
-              about a strategy, but what the strategy actually does when executed
-              on historical data.
+              not what an LLM <em className="italic">claims</em> about a
+              strategy, but what the strategy actually does when executed on
+              historical data.
             </p>
           </div>
 
@@ -121,10 +121,10 @@ export function QuantCodeBench() {
                 <span className="font-mono text-[11px] text-onyx-outline tracking-caption">
                   Stage {step.tag}
                 </span>
-                <h3 className="text-[19px] tracking-heading-sm text-deep-shadow leading-snug">
+                <h3 className="text-[18px] tracking-heading-sm text-deep-shadow leading-snug">
                   {step.title}
                 </h3>
-                <p className="text-[13px] leading-[1.55] text-inkwell/75">{step.body}</p>
+                <p className="text-[13px] leading-[1.6] text-inkwell/70">{step.body}</p>
               </div>
             ))}
           </div>
@@ -137,7 +137,7 @@ export function QuantCodeBench() {
               Dataset · sources
             </span>
             <h3 className="mt-3 text-[22px] tracking-heading text-deep-shadow leading-tight">
-              400 trading-strategy tasks, drawn from where traders actually write.
+              400 tasks, drawn from where traders actually write.
             </h3>
             <div className="mt-6 flex flex-col gap-3">
               {SOURCES.map((s) => (
@@ -187,7 +187,7 @@ export function QuantCodeBench() {
           />
         </div>
 
-        <p className="mt-14 text-[14px] text-inkwell/70 max-w-[78ch] border-l-2 border-onyx-outline pl-4 leading-[1.6]">
+        <p className="mt-14 text-[13px] text-inkwell/65 max-w-[78ch] border-l-2 border-onyx-outline pl-4 leading-[1.65]">
           Why it matters — most LLM benchmarks score reasoning in isolation. In
           markets, the gap between “correct-looking code” and “code that holds
           capital” is where money is made or lost. QuantCode-Bench measures that
@@ -221,7 +221,7 @@ function BarRow({
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="col-span-2 sm:col-span-2 text-right font-mono text-[12px] text-muted-stone">
+      <span className="col-span-2 sm:col-span-2 text-right font-mono text-[11px] tracking-caption text-muted-stone">
         {count}
       </span>
     </div>
@@ -251,7 +251,7 @@ function Leaderboard({
           </span>
         )}
       </div>
-      <p className="mt-3 text-[13px] leading-[1.55] text-inkwell/70 max-w-[44ch]">
+      <p className="mt-3 text-[13px] leading-[1.6] text-inkwell/70 max-w-[44ch]">
         {sub}
       </p>
       <div className="mt-5 border border-inkwell/15 rounded-[4px] overflow-hidden bg-canvas-parchment shadow-[var(--shadow-subtle)]">
@@ -265,14 +265,14 @@ function Leaderboard({
             key={row.rank}
             className="grid grid-cols-12 gap-4 px-5 py-4 border-b border-inkwell/10 last:border-b-0 items-baseline hover:bg-pebble-gray/50 transition-colors"
           >
-            <span className="col-span-1 font-mono text-[12px] text-onyx-outline">
+            <span className="col-span-1 font-mono text-[11px] tracking-caption text-onyx-outline">
               {row.rank}
             </span>
             <span className="col-span-8 font-mono text-[13px] text-deep-shadow">
               {row.model}
             </span>
             <span
-              className={`col-span-3 text-right font-serif-display text-[24px] leading-none ${
+              className={`col-span-3 text-right font-serif-display text-[22px] leading-none ${
                 accent ? 'text-onyx-outline' : 'text-deep-shadow'
               }`}
             >
@@ -281,12 +281,12 @@ function Leaderboard({
           </div>
         ))}
         <div className="px-5 py-3 bg-pebble-gray/40 text-[12px] text-muted-stone flex justify-between items-center">
-          <span>12 more models</span>
+          <span className="font-mono text-[11px] tracking-caption">12 more models</span>
           <a
             href="https://limexailab.github.io/QuantCode-Bench/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-onyx-outline hover:underline underline-offset-4"
+            className="font-mono text-[11px] tracking-caption text-onyx-outline hover:underline underline-offset-4"
           >
             Full leaderboard ↗
           </a>

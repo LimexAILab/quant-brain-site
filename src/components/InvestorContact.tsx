@@ -34,14 +34,14 @@ export function InvestorContact() {
             <span className="text-onyx-outline">§ 06</span> · Investor contact
           </span>
 
-          <h2 className="text-[40px] sm:text-[52px] lg:text-[64px] leading-[0.98] tracking-display text-deep-shadow">
+          <h2 className="text-[36px] sm:text-[44px] lg:text-[56px] leading-[1.05] tracking-display text-deep-shadow">
             Talk to us before{' '}
             <span className="font-serif-display italic text-onyx-outline">
               the round closes.
             </span>
           </h2>
 
-          <p className="text-[16px] leading-[1.6] text-inkwell/80 max-w-[44ch]">
+          <p className="text-[15px] leading-[1.65] text-inkwell/80 max-w-[44ch]">
             We're a thesis-driven group with a working benchmark, a clear roadmap,
             and a small team that ships. If your fund is positioned around
             AI × markets, this is the right table.
@@ -115,17 +115,17 @@ export function InvestorContact() {
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 placeholder="Briefly: who you are, fund/firm thesis, what you'd like to discuss."
-                className="bg-canvas-parchment border border-inkwell/20 rounded-[4px] px-3 py-3 text-[14px] leading-[1.5] placeholder:text-muted-stone text-inkwell focus:outline-none focus:border-onyx-outline resize-y"
+                className="bg-canvas-parchment border border-inkwell/20 rounded-[4px] px-3 py-3 text-[13px] leading-[1.55] placeholder:text-muted-stone text-inkwell focus:outline-none focus:border-onyx-outline resize-y"
               />
             </div>
 
             <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
-              <span className="font-mono text-[11px] text-muted-stone">
+              <span className="font-mono text-[11px] tracking-caption text-muted-stone">
                 Sent securely · we never share contact data
               </span>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 text-[14px] border border-onyx-outline text-onyx-outline px-5 py-[10px] rounded-[4px] hover:bg-onyx-outline hover:text-canvas-parchment transition-colors"
+                className="inline-flex items-center gap-2 text-[13px] border border-onyx-outline text-onyx-outline px-5 py-[10px] rounded-[4px] hover:bg-onyx-outline hover:text-canvas-parchment transition-colors"
               >
                 {submitted ? 'Opening mail client…' : 'Send inquiry'}
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
@@ -161,7 +161,7 @@ function Field({
         required={required}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="bg-canvas-parchment border border-inkwell/20 rounded-[4px] px-3 py-3 text-[14px] text-inkwell placeholder:text-muted-stone focus:outline-none focus:border-onyx-outline"
+        className="bg-canvas-parchment border border-inkwell/20 rounded-[4px] px-3 py-3 text-[13px] text-inkwell placeholder:text-muted-stone focus:outline-none focus:border-onyx-outline"
       />
     </div>
   )

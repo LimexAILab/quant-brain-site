@@ -39,10 +39,10 @@ export function WhatWeDo() {
       <div className="mx-auto max-w-[1300px] px-6 lg:px-10 py-24 lg:py-28 grid grid-cols-12 gap-x-8 gap-y-12">
         <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
           <SectionLabel index="§ 01">What we work on</SectionLabel>
-          <h2 className="text-[34px] lg:text-[40px] leading-[1.05] tracking-heading-lg text-deep-shadow">
+          <h2 className="text-[32px] lg:text-[40px] leading-[1.1] tracking-heading-lg text-deep-shadow">
             Five threads, one product loop.
           </h2>
-          <p className="text-[15px] leading-[1.55] text-inkwell/75 max-w-[40ch]">
+          <p className="text-[15px] leading-[1.6] text-inkwell/80 max-w-[40ch]">
             Each direction feeds the next: a financial foundation model under
             domain-specialized agents, judged by an evaluation stack that won't
             let weak models hide.
@@ -58,10 +58,10 @@ export function WhatWeDo() {
               <span className="font-mono text-[11px] text-muted-stone tracking-caption">
                 {p.tag}
               </span>
-              <h3 className="text-[20px] tracking-heading-sm text-deep-shadow leading-snug">
+              <h3 className="text-[18px] tracking-heading-sm text-deep-shadow leading-snug">
                 {p.title}
               </h3>
-              <p className="text-[14px] leading-[1.55] text-inkwell/75">{p.body}</p>
+              <p className="text-[13px] leading-[1.6] text-inkwell/70">{p.body}</p>
             </article>
           ))}
         </div>

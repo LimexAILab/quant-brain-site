@@ -3,7 +3,7 @@ import type { ReactNode, AnchorHTMLAttributes, ButtonHTMLAttributes } from 'reac
 export function Caption({ children, className = '' }: { children: ReactNode; className?: string }) {
   return (
     <span
-      className={`font-mono text-[10px] tracking-caption text-muted-stone ${className}`}
+      className={`font-mono text-[11px] tracking-caption text-muted-stone ${className}`}
     >
       {children}
     </span>
@@ -12,7 +12,7 @@ export function Caption({ children, className = '' }: { children: ReactNode; cla
 
 export function SectionLabel({ index, children }: { index: string; children: ReactNode }) {
   return (
-    <div className="flex items-baseline gap-3 text-[11px] font-mono tracking-caption text-muted-stone">
+    <div className="flex items-baseline gap-3 font-mono text-[11px] tracking-caption text-muted-stone">
       <span className="text-onyx-outline">{index}</span>
       <span>{children}</span>
     </div>

@@ -32,15 +32,15 @@ export function Publications() {
         <div className="grid grid-cols-12 gap-x-8">
           <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
             <SectionLabel index="§ 03">Research · publications</SectionLabel>
-            <h2 className="text-[34px] lg:text-[40px] leading-[1.05] tracking-heading-lg text-deep-shadow">
+            <h2 className="text-[32px] lg:text-[40px] leading-[1.1] tracking-heading-lg text-deep-shadow">
               Open work, on a public ledger.
             </h2>
-            <p className="text-[15px] leading-[1.55] text-inkwell/75 max-w-[40ch]">
+            <p className="text-[15px] leading-[1.6] text-inkwell/80 max-w-[40ch]">
               We publish to arXiv, ship code on GitHub, and keep leaderboards
               live. Findings are only useful if other groups can replicate,
               contest, or extend them.
             </p>
-            <p className="text-[13px] leading-[1.6] text-muted-stone max-w-[40ch] mt-2">
+            <p className="text-[13px] leading-[1.65] text-muted-stone max-w-[40ch] mt-2">
               Additional papers are in preparation — we will list them here as
               they go public.
             </p>
@@ -60,15 +60,15 @@ export function Publications() {
                   </span>
                 </div>
                 <div className="col-span-12 sm:col-span-10 flex flex-col gap-2">
-                  <h3 className="text-[19px] tracking-heading-sm text-deep-shadow leading-snug">
+                  <h3 className="text-[18px] tracking-heading-sm text-deep-shadow leading-snug">
                     {p.title}
                   </h3>
-                  <div className="font-mono text-[12px] text-muted-stone flex flex-wrap gap-x-4">
+                  <div className="font-mono text-[11px] tracking-caption text-muted-stone flex flex-wrap gap-x-4">
                     <span>{p.authors}</span>
                     <span>·</span>
                     <span>{p.venue}</span>
                   </div>
-                  <p className="text-[14px] leading-[1.55] text-inkwell/75 max-w-[78ch]">
+                  <p className="text-[13px] leading-[1.65] text-inkwell/70 max-w-[78ch]">
                     {p.tldr}
                   </p>
                   <div className="flex flex-wrap gap-x-5 gap-y-2 mt-1">

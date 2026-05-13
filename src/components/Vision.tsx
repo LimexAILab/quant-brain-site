@@ -9,14 +9,14 @@ export function Vision() {
         </div>
 
         <div className="col-span-12 lg:col-span-9 mt-8 lg:mt-0">
-          <p className="font-serif-display text-[32px] sm:text-[40px] lg:text-[52px] leading-[1.1] tracking-heading-lg text-deep-shadow max-w-[26ch]">
+          <p className="font-serif-display text-[32px] sm:text-[40px] lg:text-[48px] leading-[1.15] tracking-heading-lg text-deep-shadow max-w-[26ch]">
             The next decade of trading will be{' '}
             <span className="italic text-onyx-outline">human + agent</span>.
             Our job is to make sure the agent half is{' '}
             <em className="italic">measurably worth</em> sitting next to.
           </p>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-[15px] leading-[1.6] text-inkwell/80 max-w-[78ch]">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-[15px] leading-[1.65] text-inkwell/80 max-w-[78ch]">
             <p>
               Frontier models can already write code that compiles. Soon they
               will propose, test, and refine entire trading workflows alongside
