@@ -17,7 +17,7 @@ const PILLARS = [
     tag: '03',
     title: 'Strategy generation with platform-native agents',
     body:
-      'Models trained to generate executable algorithmic strategies, with seamless agent integration into trading platforms and execution venues — not toy code, deployable artifacts.',
+      'Models trained to generate executable algorithmic strategies, with seamless agent integration into trading platforms and execution venues.',
   },
   {
     tag: '04',

@@ -25,8 +25,8 @@ export function Hero() {
           <p className="mt-8 max-w-[58ch] text-[18px] leading-[1.5] text-inkwell/80">
             QuantBrain Labs is an independent research group at the intersection
             of large language models and quantitative finance. We design agentic
-            tools that compress the trader's loop — from idea to executable
-            strategy — into minutes instead of weeks.
+            tools that compress the trader's loop from idea to executable
+            strategy.
           </p>
 
           <p className="mt-6 max-w-[68ch] text-[15px] leading-[1.6] text-inkwell/70">

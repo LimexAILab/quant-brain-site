@@ -14,7 +14,7 @@ const PIPELINE = [
   {
     tag: '03',
     title: 'Trade',
-    body: 'The strategy actually places at least one trade — silent code is failed code.',
+    body: 'The strategy actually places at least one trade on historical data.',
   },
   {
     tag: '04',
@@ -107,35 +107,6 @@ export function QuantCodeBench() {
           </div>
         </div>
 
-        {/* Headline metric */}
-        <div className="mt-14 grid grid-cols-12 gap-x-8 gap-y-8 items-end border-t border-b border-inkwell/15 py-10">
-          <div className="col-span-12 lg:col-span-5">
-            <span className="font-mono text-[11px] tracking-caption text-muted-stone">
-              Headline result · best model
-            </span>
-            <div className="mt-3 flex items-baseline gap-3">
-              <span className="font-serif-display text-[88px] lg:text-[112px] leading-[0.9] text-deep-shadow tracking-display">
-                75.8%
-              </span>
-              <span className="font-mono text-[14px] text-onyx-outline">→</span>
-              <span className="font-serif-display text-[88px] lg:text-[112px] leading-[0.9] text-onyx-outline tracking-display">
-                97.5%
-              </span>
-            </div>
-            <p className="mt-4 text-[14px] leading-[1.6] text-inkwell/75 max-w-[42ch]">
-              Judge pass rate of <span className="font-mono">claude-opus-4.6</span>:
-              single-turn vs. agentic multi-turn (≤10 self-corrections). The gap
-              is the value of the loop we build around the model.
-            </p>
-          </div>
-
-          <div className="col-span-12 lg:col-span-7 grid grid-cols-3 gap-x-6 gap-y-2">
-            <Stat value="400" label="benchmark tasks" />
-            <Stat value="17" label="frontier LLMs evaluated" />
-            <Stat value="4" label="stages per evaluation" />
-          </div>
-        </div>
-
         {/* Pipeline */}
         <div className="mt-16">
           <span className="font-mono text-[11px] tracking-caption text-muted-stone">
@@ -224,17 +195,6 @@ export function QuantCodeBench() {
         </p>
       </div>
     </section>
-  )
-}
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="flex flex-col gap-1">
-      <span className="font-serif-display text-[44px] leading-none text-deep-shadow tracking-heading-lg">
-        {value}
-      </span>
-      <span className="text-[12px] text-inkwell/70 leading-snug">{label}</span>
-    </div>
   )
 }
 
