@@ -172,8 +172,8 @@ export function QuantCodeBench() {
           </div>
         </div>
 
-        {/* Dual leaderboard */}
-        <div className="mt-16 grid grid-cols-12 gap-x-8 gap-y-10">
+        {/* Dual leaderboard — subgrid keeps title / sub / table aligned across both columns */}
+        <div className="mt-16 flex flex-col gap-y-12 lg:grid lg:grid-flow-col lg:grid-cols-2 lg:gap-x-8 lg:gap-y-4 lg:[grid-template-rows:auto_auto_1fr]">
           <Leaderboard
             title="Single-turn · Judge pass"
             sub="One shot. The model must be right on the first attempt."
@@ -240,7 +240,7 @@ function Leaderboard({
   accent?: boolean
 }) {
   return (
-    <div className="col-span-12 lg:col-span-6">
+    <div className="flex flex-col gap-3 lg:contents">
       <div className="flex items-baseline gap-3">
         <span className="font-mono text-[11px] tracking-caption text-muted-stone">
           {title}
@@ -251,10 +251,10 @@ function Leaderboard({
           </span>
         )}
       </div>
-      <p className="mt-3 text-[13px] leading-[1.6] text-inkwell/70 max-w-[44ch]">
+      <p className="text-[13px] leading-[1.6] text-inkwell/70 lg:max-w-[44ch]">
         {sub}
       </p>
-      <div className="mt-5 border border-inkwell/15 rounded-[4px] overflow-hidden bg-canvas-parchment shadow-[var(--shadow-subtle)]">
+      <div className="border border-inkwell/15 rounded-[4px] overflow-hidden bg-canvas-parchment shadow-[var(--shadow-subtle)] lg:self-start lg:w-full">
         <div className="grid grid-cols-12 gap-4 px-5 py-3 border-b border-inkwell/10 font-mono text-[11px] tracking-caption text-muted-stone">
           <span className="col-span-1">#</span>
           <span className="col-span-8">Model</span>
