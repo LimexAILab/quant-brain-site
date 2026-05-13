@@ -2,24 +2,24 @@ import { SectionLabel } from './ui'
 
 const PROFILE = [
   {
-    title: 'Researchers in LLMs and reasoning',
+    title: 'Investors with an AI × markets thesis',
     body:
-      'You\'ve published at NeurIPS / ICML / ICLR or shipped frontier evals. You care about benchmarks that actually predict deployment performance.',
+      "Funds and angels positioned around the next wave of agentic AI in finance. We're raising to scale the model, the evaluation stack, and the early product surface — with a working benchmark and shipped code already on the table.",
   },
   {
-    title: 'ML engineers with quant chops',
+    title: 'Research labs working on agents and evaluation',
     body:
-      'You\'ve built backtesters, written trading code in production, or shipped infra for evaluation pipelines at scale.',
+      'Academic and industry groups building agentic systems, LLM evaluation, or quantitative reasoning. We co-author, share data, and contribute back to public benchmarks.',
   },
   {
-    title: 'Quants curious about AI',
+    title: 'Trading firms, brokers, prop desks',
     body:
-      'You know what alpha decay looks like, what a realistic backtest must rule out, and where LLM-generated strategies will quietly fail.',
+      'Partners who want their workflows reflected in the next generation of trader assistants. We trade depth-of-domain feedback for early access and joint pilots.',
   },
   {
-    title: 'Builders, not spectators',
+    title: 'Data, compute, and infra partners',
     body:
-      'You ship. You measure. You change your mind in public when the data says so. You think research without code is folklore.',
+      'Providers of market data, alternative data, execution venues, and large-scale compute. Privileged inputs make the difference between a clever demo and a deployable system.',
   },
 ]
 
@@ -28,20 +28,20 @@ export function Collaborate() {
     <section id="collaborate" className="border-b border-inkwell/10">
       <div className="mx-auto max-w-[1300px] px-6 lg:px-10 py-24 lg:py-28 grid grid-cols-12 gap-x-8 gap-y-12">
         <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
-          <SectionLabel index="§ 05">Collaborate</SectionLabel>
+          <SectionLabel index="§ 05">Capital & partnerships</SectionLabel>
           <h2 className="text-[34px] lg:text-[40px] leading-[1.05] tracking-heading-lg text-deep-shadow">
-            What we look for.
+            Who we want at the table.
           </h2>
           <p className="text-[15px] leading-[1.55] text-inkwell/75 max-w-[40ch]">
-            We don't publish a job ladder. We work with people whose past output
-            answers the question for us. If you recognize yourself below, write us
-            directly.
+            This is not a hiring page. It is an open invitation to investors and
+            collaborators whose work compounds with ours. If any of the profiles
+            below describe you, write directly.
           </p>
           <a
-            href="mailto:research@quantbrainlabs.ai"
+            href="mailto:khoroshilovalexis@gmail.com"
             className="self-start mt-2 inline-flex items-center gap-2 font-mono text-[14px] text-onyx-outline border-b border-onyx-outline/40 hover:border-onyx-outline pb-[2px]"
           >
-            research@quantbrainlabs.ai ↗
+            khoroshilovalexis@gmail.com ↗
           </a>
         </div>
 

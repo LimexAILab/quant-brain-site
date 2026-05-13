@@ -16,7 +16,7 @@ export function InvestorContact() {
     e.preventDefault()
     const subject = encodeURIComponent(`[${form.type}] ${form.name} · ${form.organization}`)
     const body = encodeURIComponent(`${form.message}\n\n— ${form.name}, ${form.organization}`)
-    window.location.href = `mailto:contact@quantbrainlabs.ai?subject=${subject}&body=${body}`
+    window.location.href = `mailto:khoroshilovalexis@gmail.com?subject=${subject}&body=${body}`
     setSubmitted(true)
   }
 
@@ -49,10 +49,10 @@ export function InvestorContact() {
 
           <div className="mt-2 flex flex-col gap-2 font-mono text-[13px]">
             <a
-              href="mailto:contact@quantbrainlabs.ai"
+              href="mailto:khoroshilovalexis@gmail.com"
               className="text-onyx-outline hover:underline underline-offset-4 self-start"
             >
-              contact@quantbrainlabs.ai
+              khoroshilovalexis@gmail.com
             </a>
             <span className="text-muted-stone">
               Reply within 48h · NDAs available on request

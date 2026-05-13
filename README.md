@@ -1,25 +1,31 @@
-# QUANT BRAIN
+# QuantBrain Labs — site
 
-Это простой сайт на React и Vite.
+Marketing and research site for **QuantBrain Labs**: an independent research
+group at the intersection of large language models and quantitative finance.
 
-Установить Node.js:
+Built with **React 19 · Vite · Tailwind CSS 4** and deployed to GitHub Pages.
 
-[nodejs.org](https://nodejs.org/)
+Live: https://limexailab.github.io/quant-brain-site/
 
-Лучше поставить версию LTS.
+## Local development
 
-## Как запустить
-
-Установить зависимости:
+Requires Node.js LTS.
 
 ```bash
 npm install
-```
-
-Запустить сайт:
-
-```bash
 npm run dev
 ```
 
-После запуска открой адрес, который появится в терминале.
+The dev server will print a local URL (e.g. `http://127.0.0.1:5173/`).
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+
+Pushes to `master` automatically build and deploy to GitHub Pages via
+`.github/workflows/deploy.yml`.

@@ -15,18 +15,27 @@ export function Hero() {
         {/* Headline column */}
         <div className="col-span-12 lg:col-span-9 mt-8 lg:mt-0">
           <h1 className="text-[44px] sm:text-[56px] lg:text-[76px] leading-[0.98] tracking-display text-deep-shadow font-medium">
-            We measure and build <br /> the AI systems that will
+            We build AI assistants <br /> that make traders
             <br />
             <span className="font-serif-display italic font-normal text-onyx-outline">
-              trade real capital.
+              measurably faster.
             </span>
           </h1>
 
           <p className="mt-8 max-w-[58ch] text-[18px] leading-[1.5] text-inkwell/80">
-            QuantBrain Labs is an independent research group at the intersection of large
-            language models and quantitative finance. We design rigorous benchmarks and
-            agentic systems for one question: which models can actually generate
-            executable trading strategies?
+            QuantBrain Labs is an independent research group at the intersection
+            of large language models and quantitative finance. We design agentic
+            tools that compress the trader's loop — from idea to executable
+            strategy — into minutes instead of weeks.
+          </p>
+
+          <p className="mt-6 max-w-[68ch] text-[15px] leading-[1.6] text-inkwell/70">
+            Building world-class user experience in finance and trading takes
+            several disciplines working in partnership: training models for a
+            specialized domain, designing rigorous evaluation and validation
+            methods, refining and stress-testing rough versions with early users
+            to surface what actually works, and scaling those findings into
+            products our clients can rely on.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -37,27 +46,8 @@ export function Hero() {
               Read research
             </Button>
           </div>
-
-          {/* Anchor metric strip */}
-          <div className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-6 border-t border-inkwell/15 pt-6 max-w-[860px]">
-            <Anchor n="400" label="benchmark tasks" />
-            <Anchor n="16+" label="frontier models evaluated" />
-            <Anchor n="4-stage" label="execution pipeline" />
-            <Anchor n="97.5%" label="best multi-turn Judge pass" />
-          </div>
         </div>
       </div>
     </section>
-  )
-}
-
-function Anchor({ n, label }: { n: string; label: string }) {
-  return (
-    <div className="flex flex-col gap-1">
-      <span className="font-serif-display text-[34px] leading-none text-deep-shadow tracking-heading-lg">
-        {n}
-      </span>
-      <span className="text-[12px] text-inkwell/70 leading-snug">{label}</span>
-    </div>
   )
 }

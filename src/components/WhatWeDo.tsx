@@ -3,27 +3,33 @@ import { SectionLabel } from './ui'
 const PILLARS = [
   {
     tag: '01',
-    title: 'LLM evaluation for finance',
+    title: 'Foundation model for finance',
     body:
-      'Benchmarks that grade models on what matters in markets: code that compiles, runs, trades, and aligns with intent — not on multiple-choice trivia.',
+      'Pre-training and adaptation of a foundation model for the financial domain — fluent in market vocabulary, instruments, and the way professionals reason about them.',
   },
   {
     tag: '02',
-    title: 'Agentic trading systems',
+    title: 'Specialization for trading time series',
     body:
-      'Multi-turn agents that compile, debug, backtest, and refine strategies in a closed loop. We study where they break and where they cross human-quant baselines.',
+      'Adapting models to specialized trading domains so they can work effectively with time series, microstructure data, and the statistical regimes markets actually live in.',
   },
   {
     tag: '03',
-    title: 'Strategy generation',
+    title: 'Strategy generation with platform-native agents',
     body:
-      'From a one-line idea to an executable Backtrader strategy. We measure the full path: semantic alignment, runtime correctness, and out-of-sample behavior.',
+      'Models trained to generate executable algorithmic strategies, with seamless agent integration into trading platforms and execution venues — not toy code, deployable artifacts.',
   },
   {
     tag: '04',
-    title: 'Benchmarking infrastructure',
+    title: 'Agentic systems for traders',
     body:
-      'Open-source pipelines for compilation, sandboxed execution, walk-forward backtesting, and LLM-as-judge alignment scoring. Reproducible by design.',
+      'Agent architectures built on best practices in tool use, planning, and self-correction — wired to the instruments a real trader actually reaches for.',
+  },
+  {
+    tag: '05',
+    title: 'Evaluation that separates the field',
+    body:
+      'Benchmarks and scoring pipelines that robustly differentiate model quality where it matters: compilation, runtime correctness, trading behavior, and semantic alignment with intent.',
   },
 ]
 
@@ -32,13 +38,14 @@ export function WhatWeDo() {
     <section className="border-b border-inkwell/10">
       <div className="mx-auto max-w-[1300px] px-6 lg:px-10 py-24 lg:py-28 grid grid-cols-12 gap-x-8 gap-y-12">
         <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
-          <SectionLabel index="§ 01">What we do</SectionLabel>
+          <SectionLabel index="§ 01">What we work on</SectionLabel>
           <h2 className="text-[34px] lg:text-[40px] leading-[1.05] tracking-heading-lg text-deep-shadow">
-            Building the measurement stack for AI in markets.
+            Five threads, one product loop.
           </h2>
           <p className="text-[15px] leading-[1.55] text-inkwell/75 max-w-[40ch]">
-            Capital allocation can't run on vibes. We turn “does this LLM know how
-            to trade?” into something you can score, replicate, and improve against.
+            Each direction feeds the next: a financial foundation model under
+            domain-specialized agents, judged by an evaluation stack that won't
+            let weak models hide.
           </p>
         </div>
 

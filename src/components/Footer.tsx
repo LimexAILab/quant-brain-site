@@ -9,10 +9,10 @@ export function Footer() {
         </div>
         <div className="flex flex-wrap items-center gap-6 font-mono">
           <a
-            href="mailto:contact@quantbrainlabs.ai"
+            href="mailto:khoroshilovalexis@gmail.com"
             className="hover:text-inkwell transition-colors"
           >
-            contact@quantbrainlabs.ai
+            khoroshilovalexis@gmail.com
           </a>
           <a
             href="https://github.com/LimexAILab/QuantCode-Bench"
