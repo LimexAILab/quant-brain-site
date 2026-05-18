@@ -184,6 +184,12 @@ const TRACK_RECORD: TrackRecordItem[] = [
       'JetBrains IDEs, VS Code, Jupyter, Android Studio, Eclipse, VSCodium. CodeGeneration and CodeChat added alongside CodeCompletion.',
   },
   {
+    year: '2025',
+    title: 'Deep expertise accumulated in finance and algorithmic trading',
+    body:
+      'A full year of focused R&D on training LLMs for finance and algorithmic trading, and on adapting them to financial time-series — the foundation the current QuantBrain stack is built on.',
+  },
+  {
     year: '2026',
     title: 'QuantBrain Labs · two public benchmarks in the first quarter',
     body: (
