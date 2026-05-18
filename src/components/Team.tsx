@@ -234,7 +234,7 @@ export function Team() {
           <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
             <SectionLabel index="§ 01">Team</SectionLabel>
             <h2 className="text-[32px] lg:text-[40px] leading-[1.1] tracking-heading-lg text-deep-shadow">
-              The people behind the work.
+              Team
             </h2>
             <p className="text-[15px] leading-[1.6] text-inkwell/80 max-w-[40ch]">
               Nine engineers and researchers who previously shipped GigaCode and
