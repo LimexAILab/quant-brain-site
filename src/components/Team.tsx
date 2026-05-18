@@ -185,9 +185,9 @@ const TRACK_RECORD: TrackRecordItem[] = [
   },
   {
     year: '2025',
-    title: 'Deep expertise accumulated in finance and algorithmic trading',
+    title: 'Deep expertise in training models for finance and algorithmic trading',
     body:
-      'A full year of focused R&D on training LLMs for finance and algorithmic trading, and on adapting them to financial time-series — the foundation the current QuantBrain stack is built on.',
+      'A full year of focused R&D on training LLMs for finance and algorithmic trading, and on adapting them to financial time-series.',
   },
   {
     year: '2026',
