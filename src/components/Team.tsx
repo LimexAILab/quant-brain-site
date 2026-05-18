@@ -184,17 +184,6 @@ const TRACK_RECORD: TrackRecordItem[] = [
       'JetBrains IDEs, VS Code, Jupyter, Android Studio, Eclipse, VSCodium. CodeGeneration and CodeChat added alongside CodeCompletion.',
   },
   {
-    year: '2025',
-    title: (
-      <>
-        Koda IDE assistant ·{' '}
-        <ExtLink href="https://kodacode.ru">kodacode.ru ↗</ExtLink>
-      </>
-    ),
-    body:
-      'End-to-end agent mode, multi-model BYOK, CLI, JetBrains and VS Code plugins.',
-  },
-  {
     year: '2026',
     title: 'QuantBrain Labs · two public benchmarks in the first quarter',
     body: (

@@ -13,18 +13,18 @@ export function Hero() {
 
         <div className="col-span-12 lg:col-span-9 mt-8 lg:mt-0">
           <h1 className="text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.0] tracking-display text-deep-shadow font-medium">
-            We build AI assistants <br /> that make traders
+            We build an IDE AI assistant
             <br />
             <span className="font-serif-display italic font-normal text-onyx-outline">
-              measurably faster.
+              for algorithmic trading.
             </span>
           </h1>
 
           <p className="mt-8 max-w-[58ch] text-[17px] leading-[1.55] text-inkwell/85">
-            QuantBrain Labs is an independent research group at the intersection
-            of large language models and quantitative finance. We design agentic
-            tools that compress the trader's loop from idea to executable
-            strategy.
+            QuantBrain Labs is a research group at the intersection of large
+            language models and quantitative finance. We design agentic tools
+            that compress the trader's loop from idea to a workable strategy or
+            task.
           </p>
 
           <p className="mt-5 max-w-[68ch] text-[13px] leading-[1.65] text-inkwell/65">
@@ -33,14 +33,14 @@ export function Hero() {
             specialized domain, designing rigorous evaluation and validation
             methods, refining and stress-testing rough versions with early users
             to surface what actually works, and scaling those findings into
-            products our clients can rely on.
+            tools traders can rely on in their day-to-day work.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Button as="a" href="#investor" variant="primary">
               Get in touch
             </Button>
-            <Button as="a" href="#quantcode-bench" variant="ghost">
+            <Button as="a" href="#research" variant="ghost">
               Read research
             </Button>
           </div>

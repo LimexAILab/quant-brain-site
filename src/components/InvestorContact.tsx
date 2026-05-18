@@ -16,12 +16,6 @@ const PROVE_IT = [
     body:
       'Scaling the financial foundation model, building the agentic strategy pipeline, and standing up an early customer surface with trading desks and prop firms.',
   },
-  {
-    tag: '03',
-    title: 'What comes back',
-    body:
-      'Equity in the category-defining measurement and modeling stack for AI × markets, published in the open, reproducible by anyone who cares to look.',
-  },
 ]
 
 export function InvestorContact() {
@@ -61,21 +55,22 @@ export function InvestorContact() {
           </h2>
 
           <p className="text-[17px] leading-[1.6] text-inkwell/85 max-w-[62ch]">
-            QuantBrain Labs is a small, named-risk team with two open benchmarks, a
-            financial foundation model in flight, and a single thesis: be the
-            measurement and modeling layer for AI in capital markets.
+            QuantBrain Labs is a team with two open benchmarks, a financial
+            foundation model in flight, and a single thesis: building an IDE AI
+            assistant for algorithmic trading that becomes a real instrument on
+            the trader's desk.
           </p>
 
           <p className="text-[15px] leading-[1.65] text-inkwell/80 max-w-[62ch]">
-            If our thesis — that the next decade of trading will be human plus
-            agent, and that whoever builds the measurement stack for it will define
-            the category — resonates with your fund or research group, we are open to
-            both investment and collaboration.
+            If a product company building an AI assistant for algorithmic
+            trading — backed by a team that has already shipped at scale —
+            resonates with your fund or research group, we are open to both
+            investment and collaboration.
           </p>
         </div>
 
         {/* Prove-it tiles */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-inkwell/10">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-px bg-inkwell/10">
           {PROVE_IT.map((tile) => (
             <article
               key={tile.tag}
