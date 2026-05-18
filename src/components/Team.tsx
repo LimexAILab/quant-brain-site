@@ -54,6 +54,7 @@ const MEMBERS: Member[] = [
     name: 'Zhirayr Hayrapetyan',
     role: 'SFT & RL · financial domain',
     photo: 'team/hayrapetyan.jpg',
+    href: 'https://www.linkedin.com/in/zhirayr-hayrapetyan/',
     initials: 'ZH',
   },
   {

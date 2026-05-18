@@ -45,16 +45,12 @@ export function Publications() {
           <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
             <SectionLabel index="§ 03">Research · publications</SectionLabel>
             <h2 className="text-[32px] lg:text-[40px] leading-[1.1] tracking-heading-lg text-deep-shadow">
-              Open work, on a public ledger.
+              Open work, in open source.
             </h2>
             <p className="text-[15px] leading-[1.6] text-inkwell/80 max-w-[40ch]">
-              We publish to arXiv, ship code on GitHub, and keep our benchmarks
-              live. Two complementary releases in our first quarter cover both
-              ends of the stack — agent execution and domain reasoning.
-            </p>
-            <p className="text-[13px] leading-[1.65] text-muted-stone max-w-[40ch] mt-2">
-              Additional papers are in preparation — we will list them here as
-              they go public.
+              We publish to arXiv and ship code on GitHub. In 2026 we have
+              already put out two complementary releases, with more papers on
+              our model-training results in the pipeline.
             </p>
           </div>
 
