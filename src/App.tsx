@@ -4,6 +4,7 @@ import { WhatWeDo } from './components/WhatWeDo'
 import { QuantCodeBench } from './components/QuantCodeBench'
 import { Publications } from './components/Publications'
 import { Vision } from './components/Vision'
+import { Team } from './components/Team'
 import { InvestorContact } from './components/InvestorContact'
 import { Footer } from './components/Footer'
 
@@ -17,6 +18,7 @@ export default function App() {
         <QuantCodeBench />
         <Publications />
         <Vision />
+        <Team />
         <InvestorContact />
       </main>
       <Footer />

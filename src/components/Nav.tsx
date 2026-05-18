@@ -10,6 +10,7 @@ export function Nav() {
           <a href="#research" className="hover:text-inkwell transition-colors">Research</a>
           <a href="#quantcode-bench" className="hover:text-inkwell transition-colors">QuantCode-Bench</a>
           <a href="#vision" className="hover:text-inkwell transition-colors">Vision</a>
+          <a href="#team" className="hover:text-inkwell transition-colors">Team</a>
         </nav>
         <a
           href="#investor"

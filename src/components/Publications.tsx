@@ -13,6 +13,18 @@ type Pub = {
 const PUBS: Pub[] = [
   {
     title:
+      'FINESSE-Bench: A Hierarchical Benchmark Suite for Financial Domain Knowledge and Technical Analysis in Large Language Models',
+    authors:
+      'Stanishevskii D., Kamkia N., Khoroshilov A., Zmitrovich D., Kokosinskii D., Hayrapetyan Z., Kalmykov A.',
+    venue: 'arXiv:2605.15482 · cs.CL',
+    year: '2026',
+    tldr:
+      'Eight specialized sub-benchmarks with 3,993 questions for hierarchical evaluation of financial competence in LLMs. Combines exam-style sets inspired by professional certifications (CFA-like Levels 1–3, CMT-like Level 2, CFTE-like Level 1), applied trading tasks, public finance QA (FinQA, ConvFinQA, TAT-QA), and a Russian-language olympiad set. Unified protocol covers multiple-choice, numerical, and short open-ended answers with LLM-as-judge scoring and stratified-bootstrap aggregation into statistical tiers.',
+    href: 'https://arxiv.org/abs/2605.15482',
+    codeHref: 'https://github.com/LimexAILab/FINESSE-Bench',
+  },
+  {
+    title:
       'QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies',
     authors:
       'Khoroshilov A., Chernysh A., Ekhtibarov O., Kamkia N., Zmitrovich D.',
@@ -36,9 +48,9 @@ export function Publications() {
               Open work, on a public ledger.
             </h2>
             <p className="text-[15px] leading-[1.6] text-inkwell/80 max-w-[40ch]">
-              We publish to arXiv, ship code on GitHub, and keep leaderboards
-              live. Findings are only useful if other groups can replicate,
-              contest, or extend them.
+              We publish to arXiv, ship code on GitHub, and keep our benchmarks
+              live. Two complementary releases in our first quarter cover both
+              ends of the stack — agent execution and domain reasoning.
             </p>
             <p className="text-[13px] leading-[1.65] text-muted-stone max-w-[40ch] mt-2">
               Additional papers are in preparation — we will list them here as
