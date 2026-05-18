@@ -317,11 +317,7 @@ export function Team() {
         </div>
 
         {/* Channel */}
-        <div className="mt-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-inkwell/15 pt-8">
-          <p className="text-[13px] text-inkwell/70 max-w-[60ch]">
-            We publish ongoing research notes on our Telegram channel.{' '}
-            <ExtLink href="https://t.me/nlpcoreteam">NLP Core Team ↗</ExtLink>
-          </p>
+        <div className="mt-14 flex flex-col md:flex-row md:items-center md:justify-end gap-6 border-t border-inkwell/15 pt-8">
           <a
             href="#investor"
             className="self-start md:self-auto text-[13px] border border-onyx-outline text-onyx-outline px-4 py-[10px] rounded-[4px] hover:bg-onyx-outline hover:text-canvas-parchment transition-colors"
