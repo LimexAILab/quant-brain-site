@@ -52,6 +52,7 @@ const MEMBERS: Member[] = [
   {
     name: 'Alexey Khoroshilov',
     role: 'SFT & RL · algorithmic trading',
+    photo: 'team/khoroshilov.jpg',
     initials: 'AK',
   },
   {
@@ -59,11 +60,6 @@ const MEMBERS: Member[] = [
     role: 'Datasets & pretraining for finance',
     photo: 'team/kalmykov.jpg',
     initials: 'AK',
-  },
-  {
-    name: 'Vadim Shutko',
-    role: 'Retrieval · RAG over docs and news',
-    initials: 'VS',
   },
   {
     name: 'Dmitry Popov',
@@ -131,7 +127,7 @@ export function Team() {
               The people behind the work.
             </h2>
             <p className="text-[15px] leading-[1.6] text-inkwell/80 max-w-[40ch]">
-              Ten engineers and researchers who previously shipped GigaCode and
+              Nine engineers and researchers who previously shipped GigaCode and
               GigaChat inside Sber and released a generation of Russian-language
               open-source models, now focused entirely on AI for quantitative
               finance and algorithmic trading.
