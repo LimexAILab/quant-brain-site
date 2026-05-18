@@ -148,7 +148,7 @@ const TRACK_RECORD: TrackRecordItem[] = [
     year: '2022',
     title: 'GigaCode (Jarvis) launched inside Sber',
     body:
-      'Started as our internal initiative in early 2021 — before the Codex paper and Copilot — and shipped as a product in 2022. CodeCompletion was the first surface.',
+      'Started as our internal initiative in early 2021 — before the Codex paper and Copilot — and shipped as a product in 2022. CodeCompletion was the first feature.',
   },
   {
     year: '2023',
