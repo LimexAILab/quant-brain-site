@@ -208,27 +208,27 @@ const BUILDING = [
   {
     title: 'Financial foundation model',
     body:
-      'Pre-training on markets, filings, and time-series — fluent in the way professionals reason about instruments.',
+      'Pre-training on financial data — fluent in the analytical methods professionals use to reason about instruments.',
+  },
+  {
+    title: 'Agents for strategy generation',
+    body:
+      'Executable algorithmic strategies, seamlessly integrated into trading platforms.',
   },
   {
     title: 'Specialization for trading time series',
     body:
-      'Models adapted to microstructure data, regimes, and the statistical world markets actually live in.',
-  },
-  {
-    title: 'Strategy generation with platform-native agents',
-    body:
-      'Executable algorithmic strategies, natively integrated into trading platforms and execution venues.',
+      'Models adapted to work with large-scale financial time-series.',
   },
   {
     title: 'Agentic systems for traders',
     body:
-      'Agents critiqued by our own benchmarks and retrained on their own failure modes — a closed loop.',
+      'Agents evaluated against our own benchmarks and trained on real-world scenarios of agent use in trading.',
   },
   {
-    title: 'Evaluation that separates the field',
+    title: 'Model training and evaluation',
     body:
-      'Cost-aware and risk-aware metrics for live-style trading, on top of the benchmarks already public.',
+      'Adapting models of any capacity and architecture, at every training stage, to highly specialized financial domains — with robust evaluation.',
   },
 ]
 
