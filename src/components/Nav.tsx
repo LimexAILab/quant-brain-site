@@ -7,10 +7,9 @@ export function Nav() {
           QuantBrain Labs
         </a>
         <nav className="hidden md:flex items-center gap-8 font-mono text-[12px] text-inkwell/70">
-          <a href="#research" className="hover:text-inkwell transition-colors">Research</a>
-          <a href="#quantcode-bench" className="hover:text-inkwell transition-colors">QuantCode-Bench</a>
-          <a href="#vision" className="hover:text-inkwell transition-colors">Vision</a>
           <a href="#team" className="hover:text-inkwell transition-colors">Team</a>
+          <a href="#investor" className="hover:text-inkwell transition-colors">Investors</a>
+          <a href="#research" className="hover:text-inkwell transition-colors">Research</a>
         </nav>
         <a
           href="#investor"

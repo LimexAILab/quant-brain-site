@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { SectionLabel } from './ui'
 
 const BASE = import.meta.env.BASE_URL
@@ -18,6 +19,12 @@ const MEMBERS: Member[] = [
     initials: 'DZ',
   },
   {
+    name: 'Alexey Khoroshilov',
+    role: 'SFT & RL · algorithmic trading',
+    photo: 'team/khoroshilov.jpg',
+    initials: 'AK',
+  },
+  {
     name: 'Denis Kokosinsky',
     role: 'Core R&D, pretraining · finance foundation model',
     photo: 'team/kokosinsky.jpg',
@@ -25,7 +32,7 @@ const MEMBERS: Member[] = [
   },
   {
     name: 'Dmitry Stanishevsky',
-    role: 'Lead, financial-domain benchmarks',
+    role: 'Financial-domain benchmarks · broadest specialization coverage',
     photo: 'team/stanishevsky.jpg',
     initials: 'DS',
   },
@@ -50,12 +57,6 @@ const MEMBERS: Member[] = [
     initials: 'ZH',
   },
   {
-    name: 'Alexey Khoroshilov',
-    role: 'SFT & RL · algorithmic trading',
-    photo: 'team/khoroshilov.jpg',
-    initials: 'AK',
-  },
-  {
     name: 'Andrey Kalmykov',
     role: 'Datasets & pretraining for finance',
     photo: 'team/kalmykov.jpg',
@@ -69,60 +70,180 @@ const MEMBERS: Member[] = [
   },
 ]
 
-const TRACK_RECORD = [
+type TrackRecordItem = {
+  year: string
+  title: ReactNode
+  body: ReactNode
+}
+
+function ExtLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-onyx-outline border-b border-onyx-outline/40 hover:border-onyx-outline pb-[1px]"
+    >
+      {children}
+    </a>
+  )
+}
+
+const TRACK_RECORD: TrackRecordItem[] = [
   {
-    year: '2019 – 2023',
-    title: 'A generation of open-source Russian-language models',
+    year: '2019',
+    title: (
+      <>
+        ruBERT base / large ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/ruBert-base">Hugging Face ↗</ExtLink>
+      </>
+    ),
+    body: 'Our first open-source models, co-developed with the DeepPavlov team.',
+  },
+  {
+    year: '2020',
+    title: (
+      <>
+        ruGPT2 S / M / L ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/rugpt2large">Hugging Face ↗</ExtLink>
+      </>
+    ),
     body:
-      'ruBERT (co-developed with DeepPavlov), ruGPT2, ruGPT3, ruT5, ruRoberta, FRED-T5, and ruGPT3.5. SOTA at release on Russian SuperGLUE and adopted across the Russian NLP community.',
+      "Used as the conversational backbone of Sber's Salute assistants, later succeeded by ruGPT3.",
+  },
+  {
+    year: '2020',
+    title: (
+      <>
+        ruGPT3 S / M / L / XL ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/rugpt3large_based_on_gpt2">
+          Hugging Face ↗
+        </ExtLink>
+      </>
+    ),
+    body:
+      'SOTA open-source generative models for Russian at release; broad public adoption.',
+  },
+  {
+    year: '2021',
+    title: (
+      <>
+        ruT5 base / large ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/ruT5-large">Hugging Face ↗</ExtLink>
+      </>
+    ),
+    body: 'The large variant held SOTA on the Russian SuperGLUE benchmark.',
+  },
+  {
+    year: '2021',
+    title: (
+      <>
+        ruRoberta 350M ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/ruRoberta-large">Hugging Face ↗</ExtLink>
+      </>
+    ),
+    body: 'SOTA encoder for Russian at the time.',
   },
   {
     year: '2022',
     title: 'GigaCode (Jarvis) launched inside Sber',
     body:
-      'Started as our internal initiative in early 2021 — before the Codex paper and Copilot — and shipped as a product inside Sber, beginning with CodeCompletion.',
+      'Started as our internal initiative in early 2021 — before the Codex paper and Copilot — and shipped as a product in 2022. CodeCompletion was the first surface.',
+  },
+  {
+    year: '2023',
+    title: (
+      <>
+        FRED-T5 800M / 1.7B ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/FRED-T5-1.7B">Hugging Face ↗</ExtLink>
+      </>
+    ),
+    body:
+      'SOTA for Russian at release; the 1.7B model approached Mistral 7B + LoRA on RSG at roughly a quarter of the capacity.',
+  },
+  {
+    year: '2023',
+    title: (
+      <>
+        ruGPT3.5 13B ·{' '}
+        <ExtLink href="https://huggingface.co/ai-forever/ruGPT-3.5-13B">Hugging Face ↗</ExtLink>
+      </>
+    ),
+    body: 'Co-developed with SberDevices. GigaChat at Sber started from our team.',
   },
   {
     year: '2023',
     title: 'Sber "Breakthrough of the Year" for GigaCode',
     body:
-      'One of only three projects company-wide that year, selected by a vote of Sber\u2019s executive leadership. GigaChat at Sber also started from our team.',
+      "One of only three projects company-wide that year, chosen by a vote of Sber's executive leadership.",
   },
   {
     year: '2024',
     title: 'GigaCode plugins released externally',
     body:
-      'JetBrains IDEs, VS Code, Jupyter, Android Studio, Eclipse, VSCodium. CodeGeneration and CodeChat modes added alongside CodeCompletion.',
+      'JetBrains IDEs, VS Code, Jupyter, Android Studio, Eclipse, VSCodium. CodeGeneration and CodeChat added alongside CodeCompletion.',
   },
   {
     year: '2025',
-    title: 'Koda IDE assistant',
+    title: (
+      <>
+        Koda IDE assistant ·{' '}
+        <ExtLink href="https://kodacode.ru">kodacode.ru ↗</ExtLink>
+      </>
+    ),
     body:
-      'kodacode.ru — end-to-end agent mode, multi-model BYOK, CLI, JetBrains and VS Code plugins. Built on top of everything above.',
+      'End-to-end agent mode, multi-model BYOK, CLI, JetBrains and VS Code plugins.',
   },
   {
     year: '2026',
     title: 'QuantBrain Labs · two public benchmarks in the first quarter',
-    body:
-      'QuantCode-Bench (arXiv:2604.15151) for executable trading strategies, and FINESSE-Bench (arXiv:2605.15482) for hierarchical financial competence. Both open source on GitHub.',
+    body: (
+      <>
+        QuantCode-Bench (
+        <ExtLink href="https://arxiv.org/abs/2604.15151">arXiv:2604.15151 ↗</ExtLink>
+        ) for executable trading strategies, and FINESSE-Bench (
+        <ExtLink href="https://arxiv.org/abs/2605.15482">arXiv:2605.15482 ↗</ExtLink>
+        ) for hierarchical financial competence. Both open source on GitHub.
+      </>
+    ),
   },
 ]
 
-const ROADMAP = [
-  'Financial foundation model trained on a curated corpus of markets, filings, and time-series data.',
-  'Trading-strategy generation agents with native integration into execution venues.',
-  'Closed-loop training: agents critiqued by our own benchmarks, retrained on their own failure modes.',
-  'Expanded evaluation stack with cost-aware and risk-aware metrics for live-style trading.',
+const BUILDING = [
+  {
+    title: 'Financial foundation model',
+    body:
+      'Pre-training on markets, filings, and time-series — fluent in the way professionals reason about instruments.',
+  },
+  {
+    title: 'Specialization for trading time series',
+    body:
+      'Models adapted to microstructure data, regimes, and the statistical world markets actually live in.',
+  },
+  {
+    title: 'Strategy generation with platform-native agents',
+    body:
+      'Executable algorithmic strategies, natively integrated into trading platforms and execution venues.',
+  },
+  {
+    title: 'Agentic systems for traders',
+    body:
+      'Agents critiqued by our own benchmarks and retrained on their own failure modes — a closed loop.',
+  },
+  {
+    title: 'Evaluation that separates the field',
+    body:
+      'Cost-aware and risk-aware metrics for live-style trading, on top of the benchmarks already public.',
+  },
 ]
 
 export function Team() {
   return (
     <section id="team" className="border-b border-inkwell/10">
       <div className="mx-auto max-w-[1300px] px-6 lg:px-10 py-24 lg:py-28">
-        {/* Header */}
         <div className="grid grid-cols-12 gap-x-8">
           <div className="col-span-12 lg:col-span-4 flex flex-col gap-6">
-            <SectionLabel index="§ 05">Team</SectionLabel>
+            <SectionLabel index="§ 01">Team</SectionLabel>
             <h2 className="text-[32px] lg:text-[40px] leading-[1.1] tracking-heading-lg text-deep-shadow">
               The people behind the work.
             </h2>
@@ -156,7 +277,7 @@ export function Team() {
           <div className="col-span-12 lg:col-span-8 flex flex-col">
             {TRACK_RECORD.map((item, i) => (
               <article
-                key={item.year + item.title}
+                key={`${item.year}-${i}`}
                 className={`grid grid-cols-12 gap-x-6 gap-y-2 py-5 border-t border-inkwell/10 ${
                   i === TRACK_RECORD.length - 1 ? 'border-b' : ''
                 }`}
@@ -165,19 +286,15 @@ export function Team() {
                   {item.year}
                 </span>
                 <div className="col-span-12 sm:col-span-9 flex flex-col gap-1">
-                  <h4 className="text-[15px] text-deep-shadow leading-snug">
-                    {item.title}
-                  </h4>
-                  <p className="text-[13px] leading-[1.65] text-inkwell/70">
-                    {item.body}
-                  </p>
+                  <h4 className="text-[15px] text-deep-shadow leading-snug">{item.title}</h4>
+                  <p className="text-[13px] leading-[1.65] text-inkwell/70">{item.body}</p>
                 </div>
               </article>
             ))}
           </div>
         </div>
 
-        {/* What's next */}
+        {/* What we are building */}
         <div className="mt-16 grid grid-cols-12 gap-x-8 gap-y-6">
           <div className="col-span-12 lg:col-span-4">
             <span className="font-mono text-[11px] tracking-caption text-muted-stone">
@@ -188,34 +305,26 @@ export function Team() {
             </h3>
           </div>
           <div className="col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-px bg-inkwell/10 self-start">
-            {ROADMAP.map((line, i) => (
-              <div
-                key={i}
-                className="bg-canvas-parchment p-5 flex gap-4 items-start"
+            {BUILDING.map((item, i) => (
+              <article
+                key={item.title}
+                className="bg-canvas-parchment p-5 flex flex-col gap-2"
               >
-                <span className="font-mono text-[11px] text-onyx-outline tracking-caption pt-[3px]">
+                <span className="font-mono text-[11px] text-onyx-outline tracking-caption">
                   0{i + 1}
                 </span>
-                <p className="text-[13px] leading-[1.6] text-inkwell/85">
-                  {line}
-                </p>
-              </div>
+                <h4 className="text-[15px] text-deep-shadow leading-snug">{item.title}</h4>
+                <p className="text-[13px] leading-[1.6] text-inkwell/70">{item.body}</p>
+              </article>
             ))}
           </div>
         </div>
 
-        {/* Channel + CTA */}
+        {/* Channel */}
         <div className="mt-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-inkwell/15 pt-8">
           <p className="text-[13px] text-inkwell/70 max-w-[60ch]">
             We publish ongoing research notes on our Telegram channel.{' '}
-            <a
-              href="https://t.me/nlpcoreteam"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-onyx-outline border-b border-onyx-outline/40 hover:border-onyx-outline pb-[1px]"
-            >
-              NLP Core Team ↗
-            </a>
+            <ExtLink href="https://t.me/nlpcoreteam">NLP Core Team ↗</ExtLink>
           </p>
           <a
             href="#investor"
@@ -246,12 +355,8 @@ function MemberCard({ member }: { member: Member }) {
           </div>
         )}
       </div>
-      <h3 className="mt-3 text-[14px] text-deep-shadow leading-snug">
-        {member.name}
-      </h3>
-      <p className="mt-1 text-[12px] leading-[1.5] text-inkwell/65">
-        {member.role}
-      </p>
+      <h3 className="mt-3 text-[14px] text-deep-shadow leading-snug">{member.name}</h3>
+      <p className="mt-1 text-[12px] leading-[1.5] text-inkwell/65">{member.role}</p>
     </>
   )
 

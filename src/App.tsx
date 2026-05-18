@@ -1,11 +1,8 @@
 import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
-import { WhatWeDo } from './components/WhatWeDo'
-import { QuantCodeBench } from './components/QuantCodeBench'
-import { Publications } from './components/Publications'
-import { Vision } from './components/Vision'
 import { Team } from './components/Team'
 import { InvestorContact } from './components/InvestorContact'
+import { Publications } from './components/Publications'
 import { Footer } from './components/Footer'
 
 export default function App() {
@@ -14,12 +11,9 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <WhatWeDo />
-        <QuantCodeBench />
-        <Publications />
-        <Vision />
         <Team />
         <InvestorContact />
+        <Publications />
       </main>
       <Footer />
     </div>
