@@ -40,21 +40,18 @@ const MEMBERS: Member[] = [
     name: 'Alexey Chernysh',
     role: 'Models & benchmarks · algorithmic trading',
     photo: 'team/chernysh.jpg',
-    href: 'https://www.linkedin.com/in/alexey-chernysh-4a413289/',
     initials: 'AC',
   },
   {
     name: 'Nina Kamkia',
     role: 'Time-series agents · technical analysis',
     photo: 'team/kamkia.jpg',
-    href: 'https://www.linkedin.com/in/nina-kamkia-826b02234',
     initials: 'NK',
   },
   {
     name: 'Zhirayr Hayrapetyan',
     role: 'SFT & RL · financial domain',
     photo: 'team/hayrapetyan.jpg',
-    href: 'https://www.linkedin.com/in/zhirayr-hayrapetyan/',
     initials: 'ZH',
   },
   {
