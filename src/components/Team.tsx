@@ -271,11 +271,11 @@ export function Team() {
             </h3>
           </div>
           <div className="col-span-12 lg:col-span-8 flex flex-col">
-            {TRACK_RECORD.map((item, i) => (
+            {[...TRACK_RECORD].reverse().map((item, i, arr) => (
               <article
                 key={`${item.year}-${i}`}
                 className={`grid grid-cols-12 gap-x-6 gap-y-2 py-5 border-t border-inkwell/10 ${
-                  i === TRACK_RECORD.length - 1 ? 'border-b' : ''
+                  i === arr.length - 1 ? 'border-b' : ''
                 }`}
               >
                 <span className="col-span-12 sm:col-span-3 font-mono text-[11px] tracking-caption text-muted-stone pt-1">
