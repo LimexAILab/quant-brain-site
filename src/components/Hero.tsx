@@ -13,7 +13,7 @@ export function Hero() {
 
         <div className="col-span-12 lg:col-span-9 mt-8 lg:mt-0">
           <h1 className="text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.0] tracking-display text-deep-shadow font-medium">
-            We build an IDE AI assistant
+            We build an AI
             <br />
             <span className="font-serif-display italic font-normal text-onyx-outline">
               for algorithmic trading.
