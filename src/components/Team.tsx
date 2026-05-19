@@ -26,7 +26,7 @@ const MEMBERS: Member[] = [
   },
   {
     name: 'Denis Kokosinsky',
-    role: 'Core R&D, pretraining · finance foundation model',
+    role: 'Pretraining · finance foundation model',
     photo: 'team/kokosinsky.jpg',
     initials: 'DK',
   },
@@ -56,7 +56,7 @@ const MEMBERS: Member[] = [
   },
   {
     name: 'Andrey Kalmykov',
-    role: 'Datasets & pretraining for finance',
+    role: 'Datasets & pretraining for the finance foundation model',
     photo: 'team/kalmykov.jpg',
     initials: 'AK',
   },
